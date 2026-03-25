@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+int a,b,c,d,temp_1;
+
+cout<<"Enter The Value Of a:";
+cin>>a;
+cout<<"Enter The Value Of b:";
+cin>>b;
+cout<<"Enter The Value Of c:";
+cin>>c;
+cout<<"Enter The Value Of d:";
+cin>>d;
+
+//before swapping
+
+a=a;
+b=b;
+c=c;
+d=d;
+
+//swapping process
+
+temp_1=a;
+a=b;
+b=c;
+c=d;
+d=temp_1;
+
+cout <<"a is:"<<a<<endl;
+cout <<"b is:"<<b<<endl;
+cout <<"c is:"<<c<<endl;
+cout <<"d is:"<<d<<endl;
+
+return 0;
+
+}
