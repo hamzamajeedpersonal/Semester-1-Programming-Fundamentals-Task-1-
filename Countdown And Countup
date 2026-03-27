@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,i,n,b,k,t;
+    char op;
+    cout<<"Start Value: \n";
+    cin>>n;
+    cout<<"Ending Value:\n";
+    cin>>a;
+    for (i=n; i<=a; i++)
+    {
+        cout<<"Countup :"<<i<<" ";
+        cout<<"\n";  // First Countup
+    }
+
+    cout<<"Start Value: \n"; // Then Countdown
+    cin>>t;
+    cout<<"Ending Value: \n";
+    cin>>b;
+    for (k=t; k>=b; --k)
+    {
+        cout<<"Countdown :"<<k<<" ";
+        cout<<"\n";
+    }
+return 0;
+}
