@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main()
+{
+string username="hamza_chaudhary";
+int password=12345;
+string username_by_userinput;
+double password_by_userinput;
+
+cout << "Enter Username:\t";
+cin >> username_by_userinput;
+if (username_by_userinput==username)
+{
+    cout <<"Enter Password :\t";
+    cin >> password_by_userinput;
+    if (password_by_userinput==password)
+    cout << "Successfully Logged In:\n";
+    else 
+    cout << "Incorrect Password !\n";
+} 
+else 
+cout << "Incorrect Username ! Try Again. \n";
+return 0;
+}
