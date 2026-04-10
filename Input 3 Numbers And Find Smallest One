@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+cout << "Enter Three Numbers :\t";
+cin >> a >> b >> c;
+{
+if (a<b)
+{
+    if (a<c)
+    cout << "The Smallest Is :\t" << a;
+    else 
+    cout << "The Smallest Is :\t" << c; 
+    } else {
+    if (b<c)
+    cout << "The Smallest Is :\t" << b;
+    else 
+    cout << "The Smallest Is :\t" << c;
+}
+}
+return 0;
+}
