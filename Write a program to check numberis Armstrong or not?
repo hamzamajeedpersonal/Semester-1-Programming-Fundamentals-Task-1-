@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main(){
+int n, temp, digits,remainder;
+cout << "Enter Number:\t";
+cin >> n;
+intsum = 0;
+digits = 0;
+temp = n;
+while (temp != 0){
+temp /= 10;
+digits++;
+}
+temp = n;
+while (temp != 0){
+remainder = temp % 10;
+int powerResult = 1;
+for(int i = 1; i <= digits; i++){
+powerResult *= remainder;
+}
+sum += powerResult;
+temp /= 10;
+}
+if (sum == n){
+cout << "Result:" << n << "is an Armstrong number." << endl;
+} else {
+cout << "Result:" << n << "is NOT an Armstrong number." << endl;
+}
+return 0;
+}
