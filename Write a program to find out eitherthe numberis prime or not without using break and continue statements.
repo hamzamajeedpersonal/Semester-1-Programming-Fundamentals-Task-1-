@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){//I Take Help From Gemini Because Unable To Make This
+int n;
+bool isPrime = true;
+cout << "Enter a positive integer:";
+cin >> n;
+if (n <= 1){
+isPrime = false;
+} else {
+for(int i = 2; i <= n / 2 && isPrime == true; i++){
+if (n % i == 0){
+isPrime = false;
+}
+}
+}
+if (isPrime){
+cout << "Result:" << n << "is a Prime Number." << "\n";
+} else {
+cout << "Result:" << n << "is NOT a Prime Number." << "\n";
+}
+return 0;
+}
