@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+char choice;
+cout << "--- Perfect Number Checker ---" << "\n";
+cout << "--- Enter Number:\t";
+cin >> n;
+intsum = 0;
+for(int i = 1; i <= n / 2; i++){
+if (n % i == 0){
+sum += i;
+}
+}
+if (sum == n && n != 0){
+cout << "Result:" << n << "is a Perfect Number." << "\n";
+} else {
+cout << "Result:" << n << "is NOT a Perfect Number." << "\n";
+}
+return 0;
+}
